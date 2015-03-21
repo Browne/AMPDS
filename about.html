@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AMPDS search</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="author" content="Eliot Brown">
+		<meta name="description" content="This is designed as an alpha version of a web interface for AMPDS code lookup">
+		<meta name="keywords" content="AMPDS, MPDS, APDS,">
+		<meta name="og:title" content="AMPDS code search" />
+		<meta name="og:description" content="Quickly search the value of AMPDS codes used by some statutory services"/>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="js/autoJump.js" type="text/javascript"></script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	</head>
+
+	<body>
+		<header class="jumbotron text-center">
+			<h1>AMPDS search</h1>
+			<h2>About</h2>
+			<p>Advanced Medical Priority Dispatch System (AMPDS) is used in the UK by some ambulance services to grade calls based on caller responses. Each call will have an AMPDS number associated with it that has been generated based on the caller responses. That number is passed on to the attending crew(s) via Airwave or the Mobile Data Terminal.</p>
+			<p>Some ambulance services use alternates to AMPDS like Pathways.</p>
+
+			<p class="lead icons">
+				<a href="index.html"><i class="fa fa-search"></i></a>
+				<a href="https://github.com/browne/AMPDS"><i class="fa fa-github"></i></a>
+			</p>
+
+		</header>
+
+
+
+	</body>
+
+</html>

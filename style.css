@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,600italic,300italic);
+
+/* colour pallete: #F2D89C, #EE7A30, #A84A29, #5A1516 */
+/* colour pallete: #3F2860, #90C5A9, #7A9A95, #EF6D3B */
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 16px/1.4 'Open Sans', Helvetica, Arial, Sans-Serif;
+	background: #3F2860 url(images/bg.jpg) center no-repeat;
+	background-size: cover;
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+header.jumbotron {
+	margin-top: 10%;
+	background: #000000;
+	opacity: 0.65;
+	color: #FFCC66;
+	width: 100%;
+}
+
+	h1, h2 {
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+		font-weight: 300;
+	}
+
+	.icons a {
+		font-size: 2.4em;
+		border-radius: 100%;
+		border: 1px solid #90C5A9;
+		width: 1.5em;
+		height: 1.5em;
+		margin: 1rem;
+		display: inline-block;
+		align-items: center;
+		color: inherit;
+		transition: all 0.4s ease;
+	}
+
+		.icons a:hover {
+			color: #EF6D3B;
+			border-color: #FA8B60;
+		}
